@@ -7,7 +7,6 @@
   pointer-events: none;
 }
 
-/* Add this to your App.css or create a StartScreen.css and import it in StartScreen.js */
 .start-screen {
   display: flex;
   justify-content: center;
@@ -16,14 +15,14 @@
 }
 
 .start-screen button {
-  background-color: rgb(211, 163, 199); /* Match the FillSquare background */
-  color: #fff; /* Adjust based on your preference */
+  background-color: rgb(211, 163, 199); 
+  color: #fff; 
   padding: 15px 30px;
-  font-family: Arial, sans-serif; /* Match the font of your squares */
-  font-size: 24px; /* Adjust based on your preference */
+  font-family: Arial, sans-serif; 
+  font-size: 24px; 
   font-weight: bold;
   border: none;
-  border-radius: 10px; /* Match the border-radius of your squares */
+  border-radius: 10px; 
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
   text-align: center;
@@ -31,8 +30,8 @@
 }
 
 .start-screen button:hover {
-  background-color: rgb(190, 142, 178); /* Slightly darker or lighter for hover effect */
-  transform: scale(1.05); /* Slightly increase size on hover */
+  background-color: rgb(190, 142, 178); 
+  transform: scale(1.05); 
 }
 
 
