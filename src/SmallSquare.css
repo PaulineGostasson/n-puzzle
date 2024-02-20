@@ -1,0 +1,49 @@
+.FillSquare, .EmptySquare {
+    display: flex;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+    text-align: center;
+    font-weight: bold;
+    z-index: 10;
+    transition: transform 0.3s ease 0s;
+    animation-duration: 0.75s;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.FillSquare {
+    background: rgb(211, 163, 199);
+}
+
+.EmptySquare {
+    display: none; 
+    background: rgb(106, 198, 184);
+}
+
+@media (max-width: 600px) {
+    .FillSquare, .EmptySquare {
+        width: 80px;
+        height: 80px;
+        font-size: 50px; /* Minska teckensnittsstorleken för mindre skärmar */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .FillSquare, .EmptySquare {
+        width: 90px;
+        height: 90px;
+        font-size: 60px; /* Justera för mellanstora skärmar */
+    }
+}
+
+@media (min-width: 901px) {
+    .FillSquare, .EmptySquare {
+        width: 107px; /* Återställ till originalstorleken för större skärmar */
+        height: 107px;
+        font-size: 75px;
+    }
+}
